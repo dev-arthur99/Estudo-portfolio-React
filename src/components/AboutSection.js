@@ -1,66 +1,57 @@
 import React from 'react';
-import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import home1 from '../img/home1.png';
+import { Layout, Description, Hide, Image } from '../styles';
+import { titleAnim, photoAnim, fade } from '../animation';
+import Wave from './Wave';
 
 const AboutSection = () => {
+  const container = {
+    hidden: { y: 0 },
+    show: {
+      y: 0,
+      transition: {
+        duration: 0.75,
+        ease: 'easeOut',
+        staggerChildren: 1,
+        when: 'afterChildren',
+      },
+    },
+  };
+
   return (
-    <About>
+    <Layout>
       <Description>
-        <div className="title">
+        <motion.div
+          className="title"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
           <Hide>
-            <h2>We work to make</h2>
+            <motion.h2 variants={titleAnim}>We work</motion.h2>
           </Hide>
           <Hide>
-            <h2>
-              your <span>dreams</span> come
-            </h2>
+            <motion.h2 variants={titleAnim}>
+              to make <span>your dreams</span>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>true.</h2>
+            <motion.h2 variants={titleAnim}>come true.</motion.h2>
           </Hide>
-        </div>
-        <p>
+        </motion.div>
+        <motion.p variants={fade}>
           Contact us for any photography or videography ideas that you have. We
           have professionals with amazing skills.
-        </p>
-        <button>Contact Us</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
       <Image>
-        <img src={home1} alt="guy with a camera" />
+        <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
       </Image>
-    </About>
+      <Wave />
+    </Layout>
   );
 };
-
-const About = styled.div`
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem 10rem;
-  color: white;
-`;
-
-const Description = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-  h2 {
-    font-weight: lighter;
-  }
-`;
-
-const Image = styled.div`
-  flex: 1;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-  }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
-`;
 
 export default AboutSection;

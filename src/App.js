@@ -20,13 +20,13 @@ function App() {
           <Route path="/" exact>
             <AboutUs />
           </Route>
-          <Route path="/work" exact>
+          <Route path="/trabalhos" exact>
             <OurWork />
           </Route>
-          <Route path="/work/:id">
+          <Route path="/trabalhos/:id">
             <MovieDetail />
           </Route>
-          <Route path="/contact" exact>
+          <Route path="/contato" exact>
             <ContactUs />
           </Route>
         </Switch>

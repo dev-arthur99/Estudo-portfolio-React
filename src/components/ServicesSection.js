@@ -6,51 +6,42 @@ import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 import styled from 'styled-components';
 import { Layout, Description, Image } from '../styles';
-import { scrollReveal } from '../animation';
-import { useScroll } from './useScroll';
 
 const ServicesSection = () => {
-  const [element, controls] = useScroll();
-
   return (
-    <Services
-      variants={scrollReveal}
-      animate={controls}
-      initial="hidden"
-      ref={element}
-    >
+    <Services>
       <Description>
         <h2>
-          High <span>quality</span> services
+          Serviços de <span>alta qualidade</span>
         </h2>
         <Cards>
           <Card>
             <div className="icon">
               <img src={clock} alt="icon" />
-              <h3>Efficient</h3>
+              <h3>Lorem.</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={teamwork} alt="icon" />
-              <h3>Teamwork</h3>
+              <h3>Lorem, ipsum.</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={diaphragm} alt="icon" />
-              <h3>Diaphragm</h3>
+              <h3>Lorem, ipsum.</h3>
             </div>
             <p>Lorem ipsum dolor sit amet</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={money} alt="icon" />
-              <h3>Affordable</h3>
+              <h3>Lorem.</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
           </Card>
         </Cards>
       </Description>
@@ -82,7 +73,7 @@ const Cards = styled.div`
 `;
 
 const Card = styled.div`
-  flex-basis: 15rem;
+  flex-basis: 25rem;
   .icon {
     display: flex;
     align-items: center;
@@ -92,6 +83,12 @@ const Card = styled.div`
       color: black;
       padding: 1rem;
     }
+  }
+
+  @media (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 

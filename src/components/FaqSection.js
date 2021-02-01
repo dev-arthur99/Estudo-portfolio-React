@@ -1,26 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Layout } from '../styles';
 import Toggle from './Toggle';
 import { AnimateSharedLayout } from 'framer-motion';
-import { useScroll } from './useScroll';
-import { scrollReveal } from '../animation';
 
 const FaqSection = () => {
-  const [element, controls] = useScroll();
-
   return (
-    <Faq
-      variants={scrollReveal}
-      ref={element}
-      animate={controls}
-      initial="hidden"
-    >
+    <Faq>
       <h2>
-        Any Questions <span>FAQ</span>
+        Dúvidas <span>FAQ</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="How Do I Start?">
+        <Toggle title="Dúvida 1">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -31,7 +22,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Daily Schedule">
+        <Toggle title="Dúvida 2">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -42,7 +33,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Payment Methods">
+        <Toggle title="Dúvida 3">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -53,7 +44,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="What Do You Offer">
+        <Toggle title="Dúvida 4">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>

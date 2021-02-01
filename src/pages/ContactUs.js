@@ -15,26 +15,26 @@ const ContactUs = () => {
     >
       <Title>
         <Hide>
-          <motion.h2 variants={titleAnim}>Get in touch</motion.h2>
+          <motion.h2 variants={titleAnim}>Entre em contato</motion.h2>
         </Hide>
       </Title>
       <div>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send Us A Message</h2>
+            <h2>Lorem, ipsum dolor.</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send an email.</h2>
+            <h2>Lorem ipsum dolor sit.</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Social Media</h2>
+            <h2>Lorem, ipsum dolor.</h2>
           </Social>
         </Hide>
       </div>

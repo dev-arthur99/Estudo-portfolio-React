@@ -32,23 +32,23 @@ const OurWork = () => {
       </motion.div>
 
       <Movie>
-        <motion.h2 variants={fade}>The Athlete</motion.h2>
+        <motion.h2 variants={fade}>O Atleta</motion.h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/the-athlete">
+        <Link to="/work/o-atleta">
           <motion.img variants={photoAnim} src={athlete} alt="athlete" />
         </Link>
       </Movie>
       <Movie>
-        <h2>The Racer</h2>
+        <h2>O Piloto</h2>
         <div className="line"></div>
-        <Link to="/work/the-racer">
+        <Link to="/work/o-piloto">
           <img src={theracer} alt="the racer" />
         </Link>
       </Movie>
       <Movie>
-        <h2>Good Times</h2>
+        <h2>As Férias</h2>
         <div className="line"></div>
-        <Link to="/work/good-times">
+        <Link to="/work/as-ferias">
           <img src={goodtimes} alt="good times" />
         </Link>
       </Movie>

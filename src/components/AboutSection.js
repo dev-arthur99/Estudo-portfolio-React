@@ -29,25 +29,24 @@ const AboutSection = () => {
           animate="show"
         >
           <Hide>
-            <motion.h2 variants={titleAnim}>We work</motion.h2>
+            <motion.h2 variants={titleAnim}>Trabalhamos</motion.h2>
           </Hide>
           <Hide>
             <motion.h2 variants={titleAnim}>
-              to make <span>your dreams</span>
+              para que <span>seus sonhos</span>
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>come true.</motion.h2>
+            <motion.h2 variants={titleAnim}>se realizem.</motion.h2>
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
-          Contact us for any photography or videography ideas that you have. We
-          have professionals with amazing skills.
+          Para todas as ideias audiovisuais que você imaginar.
         </motion.p>
-        <motion.button variants={fade}>Contact Us</motion.button>
+        <motion.button variants={fade}>Entre em contato</motion.button>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
+        <motion.img variants={photoAnim} src={home1} alt="homem com camera" />
       </Image>
       <Wave />
     </Layout>

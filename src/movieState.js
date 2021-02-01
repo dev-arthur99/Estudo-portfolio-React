@@ -9,69 +9,69 @@ import theracer2 from './img/the-racer2.jpg';
 const MovieState = () => {
   return [
     {
-      title: 'The Athlete',
+      title: 'O Atleta',
       mainImg: athlete,
       secondaryImg: athlete2,
-      url: '/work/the-athlete',
+      url: '/work/o-atleta',
       awards: [
         {
-          title: 'Truly A masterpiece',
+          title: 'Lorem ipsum dolor sit amet.',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
         {
-          title: 'Fresh look on a brutal sport.',
+          title: 'Lorem ipsum dolor sit.',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
         {
-          title: 'It’s okay lmao.',
+          title: 'Lorem ipsum dolor sit amet consectetur.',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
       ],
     },
     {
-      title: 'Good Times',
+      title: 'As Férias',
       mainImg: goodtimes,
-      url: '/work/good-times',
+      url: '/work/as-ferias',
       secondaryImg: goodtimes2,
       awards: [
         {
-          title: 'Truly A masterpiece',
+          title: 'Lorem, ipsum dolor.',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
         {
-          title: 'Fresh look on a brutal sport.',
+          title: 'Lorem ipsum dolor sit amet.',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
         {
-          title: 'It’s okay lmao.',
+          title: 'Lorem ipsum dolor sit.',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
       ],
     },
     {
-      title: 'The Racer',
+      title: 'O Piloto',
       mainImg: theracer,
-      url: '/work/the-racer',
+      url: '/work/o-piloto',
       secondaryImg: theracer2,
       awards: [
         {
-          title: 'Truly A masterpiece',
+          title: 'Lorem ipsum dolor sit.',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
         {
-          title: 'Fresh look on a brutal sport.',
+          title: 'Lorem ipsum dolor sit amet.',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
         {
-          title: 'It’s okay lmao.',
+          title: 'Lorem, ipsum dolor.',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },

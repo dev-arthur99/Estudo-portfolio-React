@@ -34,21 +34,21 @@ const OurWork = () => {
       <Movie>
         <motion.h2 variants={fade}>O Atleta</motion.h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
-        <Link to="/work/o-atleta">
+        <Link to="/trabalhos/o-atleta">
           <motion.img variants={photoAnim} src={athlete} alt="athlete" />
         </Link>
       </Movie>
       <Movie>
         <h2>O Piloto</h2>
         <div className="line"></div>
-        <Link to="/work/o-piloto">
+        <Link to="/trabalhos/o-piloto">
           <img src={theracer} alt="the racer" />
         </Link>
       </Movie>
       <Movie>
         <h2>As Férias</h2>
         <div className="line"></div>
-        <Link to="/work/as-ferias">
+        <Link to="/trabalhos/as-ferias">
           <img src={goodtimes} alt="good times" />
         </Link>
       </Movie>

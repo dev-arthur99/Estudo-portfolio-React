@@ -12,7 +12,7 @@ const MovieState = () => {
       title: 'O Atleta',
       mainImg: athlete,
       secondaryImg: athlete2,
-      url: '/work/o-atleta',
+      url: '/trabalhos/o-atleta',
       awards: [
         {
           title: 'Lorem ipsum dolor sit amet.',
@@ -34,7 +34,7 @@ const MovieState = () => {
     {
       title: 'As Férias',
       mainImg: goodtimes,
-      url: '/work/as-ferias',
+      url: '/trabalhos/as-ferias',
       secondaryImg: goodtimes2,
       awards: [
         {
@@ -57,7 +57,7 @@ const MovieState = () => {
     {
       title: 'O Piloto',
       mainImg: theracer,
-      url: '/work/o-piloto',
+      url: '/trabalhos/o-piloto',
       secondaryImg: theracer2,
       awards: [
         {
